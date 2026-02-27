@@ -1,3 +1,20 @@
 import math
 print("SHELL AND TUBE HEAT EXCHANGER")
 T_H1=float(input("inlet temperature of hot fluid in K:"))
+T_H2=float(input("outlet temperature of hot fluid in K:"))
+T_C1=float(input("inlet temperature of cold fluid in K:"))
+T_C2=float(input("outlet temperature of cold fluid in K:"))
+CP_hot=float(input("hot fluid cp in J/kg.K:"))
+CP_cold=float(input("cold fluid cp in J/kg.K:"))
+m_hot=float(input("mass flow rate of hot fluid(kg/s)(press enter if unknown):"))
+m_cold=float(input("mass flow rate of cold fluid(kg/s)(press enter if unknown):"))
+U_assumed=float(input("assumed U value in W/m^2.k:"))
+#...........................................................
+if m_hot !="":
+    Q=m_hot*CP_hot*(T_H1-T_H2)
+elif m_cold!="":
+    Q=m_cold*CP_cold*(T_C1-T_C2)
+else:
+    print("Error: At least one mass flow rate must be given.")
+    exit()
+
