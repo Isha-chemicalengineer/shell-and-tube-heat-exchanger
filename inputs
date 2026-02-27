@@ -1,0 +1,3 @@
+import math
+print("SHELL AND TUBE HEAT EXCHANGER")
+T_H1=float(input("inlet temperature of hot fluid in K:"))
