@@ -19,4 +19,7 @@ elif m_cold!="":
 else:
     print("Error: At least one mass flow rate must be given.")
     exit()
-
+delta_T1=T_H1-T_C2
+delta_T2=T_H2-T_C1
+log_T=math.log(delta_T1/delta_T2)
+LMTD=(delta_T1-delta_T2)/log_T
