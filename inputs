@@ -25,7 +25,6 @@ log_T=math.log(delta_T1/delta_T2)
 LMTD=(delta_T1-delta_T2)/log_T
 print("heat duty Q=",Q,"W")
 print("LMTD=",LMTD,"K")
-print("Area=",A,"m^2")
 S=(T_H1-T_H2)/(T_C2-T_C1)
 R=(T_C2-T_C1)/(T_H1-T_C1)
 print("S=",S)
